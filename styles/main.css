@@ -811,7 +811,8 @@ img {
   font-size: 1.1363636364rem; }
   @media screen and (max-width: 768px) {
     .counter__description {
-      font-size: 0.8181818182rem; } }
+      font-size: 0.8181818182rem;
+      font-weight: normal; } }
 
 .gallery__inner {
   display: flex;
