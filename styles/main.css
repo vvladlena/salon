@@ -445,7 +445,8 @@ img {
   background-color: #292F36;
   border-radius: 18px;
   font-size: 0.8181818182rem;
-  color: #fff; }
+  color: #fff;
+  padding: 5px; }
   .button:hover {
     background-color: #fff;
     color: #292F36;
