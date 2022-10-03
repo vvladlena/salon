@@ -23,10 +23,13 @@
                             <img src="./images/icons/logo.svg" alt="" class="logo__img">
                             <div class="logo__name title-style"> Salon </div>
                         </a>
-                        <nav class="menu">
+                        <nav class="menu" role="navigation">
+                            <input class="nav__check" type="checkbox" id="showmenu" />
+                            <label class="nav__showmenu" for="showmenu">&#9776;</label>
+                            <label class="nav__back" for="showmenu"></label>
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#intro" class="menu__link">Main</a>
+                                    <a href="#intro" class="menu__link">Główna</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="#services" class="menu__link">O nas</a>
@@ -55,16 +58,31 @@
                                 Lorem ipsum dolor sit amet consectetur adipi, dolores laborum dicta incidunt illum
                                 molestias sequi.
                             </div>
-                            <a href="#" class="button intro__button">
+                            <button class="button intro__button" id="button">
                                 <div class="button__name">Napisz do nas</div>
                                 <img class="button__img" src="images/icons/arrow.svg" alt="">
-                            </a>
+                            </button>
+
+                            <div class="popup">
+                                <div class="popup__container">
+                                    <div class="popup__wrapper">
+                                        <div id="popup__content">
+                                            <form action="send.php" method="post">
+                                                <input type="text" name="fio" placeholder="Укажите ФИО" required>
+                                                <input type="text" name="email" placeholder="Укажите e-mail" required>
+                                                <input type="submit" value="Отправить">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
 
-                </div>
-
             </section>
+
 
             <section id="services" class="section services">
                 <div class="container">
@@ -78,7 +96,8 @@
                                 </div>
                             </div>
                             <div class="service__button">
-                                <a href="" class="button button_light services__button">
+                                <a href="mailto:vldln08@gmail.com?subject=Rezerwacja terminu na Manicure&body=Witam! Chcę zapisać się na wizytę na manicure"
+                                    class="button button_light services__button">
                                     <div class="button__name">Zapisać się</div>
                                     <img src="images/icons/straight-arrow.svg" alt="">
                                 </a>
@@ -91,7 +110,8 @@
                                     ratione fuga doloremque reiciendis voluptas, corporis odis. </div>
                             </div>
                             <div class="service__button">
-                                <a href="" class="button button_light services__button">
+                                <a href="mailto:vldln08@gmail.com?subject=Rezerwacja terminu na Pedicure &body=Witam! Chcę zapisać się na wizytę na pedicure"
+                                    class="button button_light services__button">
                                     <div class="button__name">Zapisać się</div>
                                     <img src="images/icons/straight-arrow.svg" alt="">
                                 </a>
@@ -105,7 +125,8 @@
                                 </div>
                             </div>
                             <div class="service__button">
-                                <a href="" class="button button_light services__button">
+                                <a href="mailto:vldln08@gmail.com?subject=Rezerwacja terminu na Brwi&body=Witam! Chcę zapisać się na wizytę na Brwi"
+                                    class="button button_light services__button">
                                     <div class="button__name">Zapisać się</div>
                                     <img src="images/icons/straight-arrow.svg" alt="">
                                 </a>
@@ -171,10 +192,14 @@
                                     <div class="contact-content__description">pn-sb 9:00-18:00</div>
                                 </div>
                             </div>
-                            <div class="button call__button">
-                                <div class="button__name">Zadzwończie do mnie</div>
-                                <img src="images/icons/straight-arrow.svg" alt="">
+                            <div class="call__btn">
+                                <a href="mailto:vldln08@gmail.com?subject=Zadzwońcie do mnie&body=Witam! Mój numer to: "
+                                    class="button call__button">
+                                    <div class="button__name">Zadzwońcie do mnie</div>
+                                    <img src="images/icons/straight-arrow.svg" alt="">
+                                </a>
                             </div>
+
                         </div>
                         <div class="call__right"></div>
                     </div>
@@ -256,6 +281,21 @@
                                     class="partners__img"></li>
                             <li class="partners__item"><img src="./images/partners/kodi-logo.jpeg" alt=""
                                     class="partners__img"></li>
+
+                            <li class="partners__item"><img src="./images/partners/NCLA-LOGO.jpeg" alt=""
+                                    class="partners__img"></li>
+                            <li class="partners__item"><img src="./images/partners/fox-logo.png" alt=""
+                                    class="partners__img"></li>
+                            <li class="partners__item"><img src="./images/partners/anvi-logo.jpeg" alt=""
+                                    class="partners__img"></li>
+                            <li class="partners__item"><img src="./images/partners/couture-logo.jpeg" alt=""
+                                    class="partners__img"></li>
+                            <li class="partners__item"><img src="./images/partners/kodi-logo.jpeg" alt=""
+                                    class="partners__img"></li>
+
+
+
+
                         </ul>
                     </div>
                 </div>
@@ -272,14 +312,16 @@
                             <ul class="location__list">
                                 <li class="location__item">
                                     <div class="location__image"><img src="./images/location/pedicure1.jpg" alt=""
-                                            class="location__img"></div>
+                                            class="location__img" id="firstLocationImg"></div>
                                     <div class="location__description">
                                         <div class="location__data">
-                                            <div class="location__name title-style">Miejsce na pedicure</div>
-                                            <div class="location__address">Wrocław, ul. Główna</div>
+                                            <div class="location__name title-style" id="firstLocationName">Miejsce na
+                                                pedicure</div>
+                                            <div class="location__address" id="firstLocationAddress">Wrocław, ul. Główna
+                                            </div>
                                         </div>
                                         <div class="location__arrow"><img src="./images/icons/simple-arrow.svg" alt=""
-                                                class="location__arrow-img"></div>
+                                                class="location__arrow-img" id="firstLocationButton"></div>
                                     </div>
                                 </li>
 
@@ -443,7 +485,7 @@
                             </ul>
                         </div>
                         <div class="bottom__map">
-                            <iframe
+                            <iframe id="conactMap"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d856.6528514431926!2d16.913886994237316!3d51.15895824859984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470feacf7829b595%3A0xc24719547db7f10c!2zR8WCw7N3bmEgNSwgNTQtMDYxIFdyb2PFgmF3!5e0!3m2!1sru!2spl!4v1664219427987!5m2!1sru!2spl"
                                 width="" height="" style="border:0; border-radius: 45px 45px 0 45px; "
                                 allowfullscreen="" loading="lazy">
@@ -452,13 +494,13 @@
                         <div class="bottom__contact">
                             <div class="bottom__contact-inner">
                                 <div class="bottom__contact-name title-style">Contact</div>
-                                <div class="bottom__contact-arrow"><img src="./images/icons/thin-arrow.svg" alt=""
-                                        class="bottom__arrow-img"></div>
+                                <div class="bottom__contact-arrow" id="contactButton"><img
+                                        src="./images/icons/thin-arrow.svg" alt="" class="bottom__arrow-img"></div>
                             </div>
                             <ul class="bottom__contact-list">
-                                <li class="bottom__contact-item">54-061 Wrocław, ul. Główna 5A</li>
-                                <li class="bottom__contact-item">studio@gmail.com</li>
-                                <li class="bottom__contact-item">(+48) 123 456 789</li>
+                                <li class="bottom__contact-item" id="contactAddress">54-061 Wrocław, ul. Główna 5A</li>
+                                <li class="bottom__contact-item" id="contactMail">studio@gmail.com</li>
+                                <li class="bottom__contact-item" id="contactPhone">(+48) 123 456 789</li>
                             </ul>
                         </div>
                     </div>
@@ -473,6 +515,15 @@
 
         </div>
     </div>
+
+
+
+
+
+    <script src="./js/button.js"></script>
+    <script src="./js/location-slider.js"></script>
+    <script src="./js/contact-slider.js"></script>
+
 </body>
 
 </html>
