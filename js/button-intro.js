@@ -10,8 +10,13 @@ function closeForm() {
     popup.classList.remove('popup_open');
 }
 
-window.on("click touchend", function(e) {
+window.onclick = function(e){
     if (e.target == popup) {
         closeForm();
     }
-});
+}
+window.ontouchend = function(e){
+    if (e.target == popup) {
+        closeForm();
+    }
+}
