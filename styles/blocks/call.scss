@@ -1,0 +1,95 @@
+.call__inner {
+    display: flex;
+    min-height: rem(600px);
+}
+
+.call__button {
+    width: rem(260px);
+}
+
+.call__left {
+    flex: 1;
+    display: flex;
+    // min-height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: rem(25px);
+
+    @include tablets {
+        flex: 2;
+    }
+
+    @include phones {
+        align-items: center;
+    }
+}
+
+.call__name {
+    font-size: rem(45px);
+    line-height: 140%;
+    margin-bottom: rem(25px);
+
+    @include tablets {
+        font-size: rem(35px);
+    }
+}
+
+
+.call__right {
+    flex: 1;
+    background: url('../images/main/call-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 326px 0 123px;
+
+    @include tablets {
+        flex: 1;
+    }
+
+    @include phones {
+        display: none;
+    }
+}
+
+.call__contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(25px);
+
+
+    &-image {
+        margin-right: rem(25px);
+    }
+}
+
+.call__content {
+    margin-bottom: rem(25px);
+    display: flex;
+
+}
+
+.call__content-text {
+    @include phones {
+        flex: 1;
+        margin-right: 20px;
+
+    }
+}
+
+.call__content-image {
+
+    @include phones {
+        flex: 1;
+        background: url('../images/main/call-background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 30px 0 20px;
+    }
+
+}
+
+.contact-content__number {
+    font-size: rem(24px);
+}

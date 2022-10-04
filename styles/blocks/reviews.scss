@@ -1,0 +1,116 @@
+.reviews__inner {
+    background: $backgroundColor;
+    border-radius: rem(70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: rem(670px);
+    height: auto;
+    padding: rem(50px) rem(15px);
+    line-height: 1.25;
+}
+
+.reviews__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.reviews__title {
+    font-size: rem(45px);
+    width: rem(420px);
+    text-align: center;
+    margin-bottom: rem(45px);
+
+    @include tablets {
+        font-size: rem(35px);
+    }
+}
+
+
+
+
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    border-radius: rem(30px);
+    background: #fff;
+    min-height: rem(300px);
+    padding: rem(35px) rem(25px);
+    margin-right: rem(16px);
+    margin-bottom: rem(30px);
+
+    &:last-child {
+        margin-right: 0;
+
+        @include tablets{
+            margin-bottom: 0;
+        }
+    }
+
+    @include tablets {
+        width: 45%;
+
+        
+    }
+
+    @include phones {
+        margin-right: 0;
+        width: 75%;
+        margin-bottom: 20px;
+        padding: 20px 15px;
+        min-height: auto;
+    }
+
+}
+
+.review__people {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(20px);
+}
+
+.review__people-photo {
+    width: rem(77px);
+    height: rem(77px);
+    margin-right: 12px;
+
+}
+
+
+.review__people-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+}
+
+
+
+.review__description {
+    font-size: rem(18px);
+    line-height: 1.52;
+}
+
+.review__people-info {
+    display: flex;
+    align-items: center;
+}
+
+.review__people-name {
+    font-size: rem(25px);
+}
+
+.review__people-address {
+    font-size: rem(18px);
+}

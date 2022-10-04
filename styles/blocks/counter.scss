@@ -1,0 +1,63 @@
+.counter__background {
+    background: $backgroundColor;
+}
+
+.counter__inner {
+    display: flex;
+    height: rem(480px);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.counter__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.counter__item {
+    // flex: 1;
+    width: 25%;
+
+    height: rem(195px);
+    padding: rem(10px);
+    border-right: 1px solid $secondaryColor;
+
+  @include phones{
+      width: 50%;
+      border: none;
+  }
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.counter__number {
+    color: $secondaryColor;
+    font-size: rem(85px);
+
+    // @include tablets {
+    //     font-size: rem(50px);
+
+    // }
+}
+
+.counter__description {
+    font-weight: lighter;
+    font-size: rem(25px);
+
+    @include tablets {
+        font-size: rem(18px);
+        font-weight: normal;
+    }
+
+    // @include phones{
+    //     font-size: 15px;
+    // }
+}

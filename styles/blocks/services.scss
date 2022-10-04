@@ -1,0 +1,66 @@
+    .services__list {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-wrap: wrap;
+
+
+        @include phones {
+            flex-direction: column;
+        }
+
+    }
+
+    .service {
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        min-height: rem(320px);
+        width: 30%;
+        margin-right: rem(25px);
+        margin-bottom: rem(30px);
+
+
+       
+
+        @include tablets{
+            width: 45%;
+        }
+
+        @include phones{
+            margin-right: 0;
+            width: 100%;
+            min-height: auto;
+            margin-bottom: rem(50px);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+
+
+    }
+
+    .services__name {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 17px;
+        letter-spacing: 2px;
+    }
+
+    .services__content {
+        line-height: 150%;
+        margin-bottom: rem(25px);
+        padding: 0 3px;
+    }
+
+   

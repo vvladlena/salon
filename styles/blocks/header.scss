@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(90px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__name{
+font-weight: bold;
+font-size: 22px;
+}
+
+.logo__img {
+    margin-right: 10px;
+}

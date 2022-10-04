@@ -1,0 +1,48 @@
+$containerWidth: 1200px;
+$baseFontSize: 22px;
+
+$firstColor: #292F36;
+$secondaryColor: #CDA274;
+$fontColor: #4D5053;
+$backgroundColor: #F4F0EC;
+
+$z-fixed-menu: 100%;
+
+$baseFontFamily:'Jost', sans-serif;
+$secondaryFontFamily:'DM Serif Display', serif;
+
+$tablets: 768px;
+$phones: 480px;
+
+
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,700;1,800&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "layout/normalize";
+@import "layout/media";
+
+@import "layout/base";
+@import "blocks/menu";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/intro";
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/services";
+@import "blocks/call";
+@import "blocks/reviews";
+@import "blocks/partners";
+@import "blocks/location";
+@import "blocks/counter";
+@import "blocks/gallery";
+@import "blocks/join";
+@import "blocks/bottom";
+@import "blocks/socials";
+@import "blocks/footer";
+@import "blocks/form-intro";
+
+
+
+

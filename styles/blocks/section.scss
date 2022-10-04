@@ -1,0 +1,8 @@
+.section{
+    // min-height: 100vh;
+    margin-bottom: rem(180px);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
