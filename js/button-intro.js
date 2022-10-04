@@ -15,9 +15,9 @@ window.onclick = function (e) {
         closeForm();
     }
 }
-
-window.touchstart = function (e) {
+window.ontouchend = function (e) {
     if (e.target == popup) {
         closeForm();
     }
 }
+
