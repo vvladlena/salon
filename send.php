@@ -11,11 +11,9 @@ $formtext = urldecode($formtext);
 $username = trim($username);
 $email = trim($email);
 $formtext = trim($formtext);
-//echo $username;
-//echo "<br>";
-//echo $email;
+
 if (mail("vldln08@gmail.com", "Wiadomość ze strony internetowej", "Imię: ".$username.". E-mail: ".$email.". Wiadomość.:".$formtext))
- {     echo "E-mail sent";
+ {     require('index.html');
 } else {
     echo "Error";
 }?>
