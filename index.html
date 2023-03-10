@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./styles/main.css">
 
     <title src="./images/icons/logo.svg">O nas</title>
@@ -58,31 +57,12 @@
                                 Lorem ipsum dolor sit amet consectetur adipi, dolores laborum dicta incidunt illum
                                 molestias sequi.
                             </div>
-                            <button class="button intro__button" id="button">
+                            <button class="button intro__button" id="intro-button">
                                 <div class="button__name">Napisz do nas</div>
                                 <img class="button__img" src="images/icons/arrow.svg" alt="">
                             </button>
-
-                            <div class="popup">
-                                <div class="popup__container">
-                                    <div class="popup__wrapper">
-                                        <div id="popup__content">
-                                            <form action="send.php" method="post">
-                                                <div class="popup__name">Zostaw wiadomość</div>
-                                                <input type="text" name="username" placeholder="Imię" required>
-                                                <input type="text" name="email" placeholder="Twój e-mail" required>
-                                                <textarea type="text" name="formtext" placeholder="Wiadomość"></textarea>
-                                                <input class="button" type="submit" value="Wyślij">
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
                     </div>
-
             </section>
 
 
@@ -194,14 +174,10 @@
                                     <div class="contact-content__description">pn-sb 9:00-18:00</div>
                                 </div>
                             </div>
-                            <div class="call__btn">
-                                <a href="mailto:vldln08@gmail.com?subject=Zadzwońcie do mnie&body=Witam! Mój numer to: "
-                                    class="button call__button">
-                                    <div class="button__name">Zadzwońcie do mnie</div>
-                                    <img src="images/icons/straight-arrow.svg" alt="">
-                                </a>
-                            </div>
-
+                            <button class="button call__button" id="call-button">
+                                <div class="button__name">Zadzwońcie do mnie</div>
+                                <img src="images/icons/straight-arrow.svg" alt="">
+                            </button>
                         </div>
                         <div class="call__right"></div>
                     </div>
@@ -409,13 +385,14 @@
                         <ul class="gallery__list">
                             <li class="gallery__item">
                                 <div class="gallery__image">
-                                    <img src="./images/gallery/manicure2.jpg" alt="" class="gallery__img">
-                                    <div class="gallery__author">Kateryna Shevc</div>
+                                    <img src="./images/gallery/manicure2.jpg" alt="" class="gallery__img"
+                                        id="firstGalleryImg">
+                                    <div class="gallery__author" id="firstGalleryAuthor">Kateryna Shevc</div>
                                 </div>
 
                                 <div class="gallery__description">
                                     <div class="gallery__name">Manicure w naszym studio</div>
-                                    <div class="gallery__arrow">
+                                    <div class="gallery__arrow" id="firstGalleryButton">
                                         <img src="./images/icons/round-arrow.svg" alt="" class="gallery__arrow-img">
                                     </div>
                                 </div>
@@ -451,16 +428,16 @@
                     </div>
                 </div>
             </section>
-
             <section class="section join">
                 <div class="container">
                     <div class="join__inner">
                         <div class="join__title title-style title-style-join">Spodobało ci się nasze studio?</div>
                         <div class="join__subtitle">Zapraszamy do kontaktu</div>
-                        <a href="#" class="button join_button">
+
+                        <button class="button join_button" id="join-button">
                             <div class="button__name">Skontaktować się</div>
-                            <img class="join__button-img" src="images/icons/dark-arrow.svg" alt="">
-                        </a>
+                            <img class="button__img" src="images/icons/dark-arrow.svg" alt="">
+                        </button>
                     </div>
                 </div>
             </section>
@@ -519,12 +496,52 @@
     </div>
 
 
+    <div class="popup">
+        <div class="popup__container">
+            <div class="popup__wrapper">
+                <div id="popup__content">
+                    <form action="send.php" method="post">
+                        <div class="popup__name">Zostaw wiadomość</div>
+                        <input type="text" name="username" placeholder="Imię Nazwisko" required>
+                        <input type="text" name="email" placeholder="Twój e-mail" required>
+                        <textarea type="text" name="formtext" placeholder="Wiadomość"></textarea>
+                        <input class="button" type="submit" value="Wyślij">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="call-popup">
+        <div class="call-popup__container">
+            <div class="call-popup__wrapper">
+                <div id="call-popup__content">
+                    <div class="form-container">
+                        <div class="note"></div>
+                        <div class="fields">
+                            <form class="ajax-contact-form" action="">
+                                <div class="call-popup__name">Zostaw dane i odzwonimy</div>
+                                <input type="text" name="name" placeholder="Imię Nazwisko" required>
+                                <input type="text" name="email" placeholder="Twój e-mail" required>
+                                <input type="text" name="tel" placeholder="Numer telefonu" required>
+                                <input type="submit" name="submit" class=" button form-container__btn"
+                                    value="Wyślij">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-
-    <script src="./js/button-intro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/openForm.js"></script>
     <script src="./js/location-slider.js"></script>
+    <script src="./js/gallery-slider.js"></script>
     <script src="./js/contact-slider.js"></script>
+    <script src="./js/callOrder.js"></script>
+
 
 </body>
 
