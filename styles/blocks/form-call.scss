@@ -1,15 +1,15 @@
-#popup__content {
+#call-popup__content {
   // display: none;
   animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-name: fadeIn;
 }
 
-#popup__content {
+#call-popup__content {
   display: block;
 }
 
-.popup {
+.call-popup {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -22,11 +22,11 @@
   z-index: 1;
 }
 
-.popup_open {
+.call-popup_open {
   display: block;
 }
 
-.popup__container {
+.call-popup__container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,7 +37,7 @@
   width: 100%;
 }
 
-.popup__wrapper {
+.call-popup__wrapper {
   padding: 40px;
 }
 
@@ -51,9 +51,8 @@
   }
 }
 
-.popup__name {
+.call-popup__name {
   text-align: center;
   margin-bottom: rem(15px);
 
 }
-

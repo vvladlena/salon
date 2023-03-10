@@ -1,0 +1,17 @@
+
+input,
+textarea {
+  display: block;
+  margin-bottom: rem(15px);
+  min-width: 100%;
+  font-size: rem(18px);
+  padding: rem(15px);
+
+  font-family: $baseFontFamily;
+
+}
+
+textarea {
+  height: rem(110px);
+  resize: none;
+}

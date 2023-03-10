@@ -9,6 +9,7 @@
     font-size: rem(18px);
     color: #fff;
     padding: 5px;
+    border: none;
 
     &:hover {
         background-color: #fff;
@@ -48,9 +49,6 @@
     }
 }
 
-// .button__img {
-//     @include phones {
-//         width: 20px;
-//         // height: 
-//     }
-// }
+.call__button {
+    width: rem(260px);
+}
