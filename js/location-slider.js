@@ -11,7 +11,7 @@ const slideList = [{
     {
         img: "./images/location/pedicure3.jpg",
         textName: 'Miejsce na pedicure 3',
-        textAddress: 'Wrocław, ul. Główna 2'
+        textAddress: 'Wrocław, ul. Główna'
     },
 ];
 
@@ -29,4 +29,5 @@ buttonArrow.onclick = function() {
     }
     image.src = slideList[active].img;
     locationName.textContent = slideList[active].textName;
+    locationAddress.textContent = slideList[active].textAddress;
   }
